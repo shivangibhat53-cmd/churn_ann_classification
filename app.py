@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 
 
 #Load the trained model 
-model = tf.keras.models.load_model('model.h5')
+model = tf.keras.models.load_model('model.h5', compile=False)
 
 ##Load the trained model, scaler and ohe
 with open('label_encoder_gender.pkl', 'rb') as file:
